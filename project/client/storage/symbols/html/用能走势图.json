@@ -1,0 +1,62 @@
+{
+  "modified": "Wed Aug 28 2019 12:48:46 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "xAxisData",
+      "valueType": "StringArray",
+      "defaultValue": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "name": "横轴数据"
+    },
+    {
+      "attr": "useElecThisMonth",
+      "valueType": "NumberArray"
+    },
+    {
+      "attr": "useElecLastMonth",
+      "valueType": "NumberArray"
+    },
+    {
+      "attr": "useWaterThisMonth",
+      "valueType": "NumberArray"
+    },
+    {
+      "attr": "useWaterLastMonth",
+      "valueType": "NumberArray"
+    }
+  ],
+  "renderHTML": "__ht__function(data, gv, cache) {var option = {\n    color: ['rgb(241,125,164)', '#FEB64D', 'rgb(31,206,255)', 'rgb(36,145,255)'],\n\n    tooltip: {\n        trigger: 'axis',\n        axisPointer: {\n            type: 'line',\n            label: {\n                backgroundColor: '#6a7985'\n            }\n        }\n    },\n    // legend: {\n    //     show: true,\n    //     left: 'center',\n    //     top: 0,\n    //     textStyle: {\n    //         color: '#fff'\n    //     }\n    // },\n    grid: {\n        left: '3%',\n        right: '4%',\n        bottom: '15%',\n        top: '3%',\n        containLabel: true\n    },\n    // xAxis: [\n    //     {\n    //         type: 'category',\n    //         boundaryGap: false,\n    //         axisLine: { show: false },\n    //         splitLine: { show: false },\n    //         axisLabel: {\n    //             color: '#fff'\n    //         }\n    //     }\n    // ],\n    // yAxis: [\n    //     {\n    //         type: 'value',\n    //         axisLine: { show: false },\n    //         splitLine: { show: false },\n    //         axisLabel: {\n    //             color: '#fff'\n    //         }\n    //     }\n    // ],\n    xAxis: [\n        {\n            type: 'category',\n            boundaryGap: false,\n            axisLine: {\n                show: true,\n                lineStyle: { color: 'rgb(117,168,255)' }\n            },\n            splitLine: {\n                show: false,\n            },\n        }\n    ],\n    yAxis: [\n        {\n            type: \"value\",\n            boundaryGap: false,\n            axisLine: {\n                show: true,\n                lineStyle: { color: 'rgb(117,168,255)' }\n            },\n            splitLine: {\n                show: true,\n                lineStyle: { color: 'rgba(117,168,255,0.5)' }\n            },\n        }\n    ],\n    series: [\n        {\n            type: 'line',\n            name: '用电本月',\n            // label: {show: true}\n        }, {\n            type: 'line',\n            name: '用电上月',\n            // label: {show: true}\n        },\n        {\n            type: 'line',\n            name: '用水本月',\n        }, {\n            type: 'line',\n            name: '用水上月'\n        }\n    ]\n};\n\nif (!cache.htmlView) {\n    cache.htmlView = document.createElement('div');\n    cache.htmlView.style.position = 'absolute';\n    cache.htmlChart = echarts.init(cache.htmlView);\n\n    // layoutHTML will be called when the data needs to be drawing\n    cache.htmlView.layoutHTML = function () {\n        gv.layoutHTML(data, cache.htmlView, false);\n        cache.htmlChart.resize();\n    };\n}\n\n// update data\noption.series[0].data = data.a('useElecThisMonth');\noption.series[1].data = data.a('useElecLastMonth');\noption.series[2].data = data.a('useWaterThisMonth');\noption.series[3].data = data.a('useWaterLastMonth');\noption.xAxis[0].data = data.a('xAxisData');\ncache.htmlChart.setOption(option);\n\n// html for showing\nreturn cache.htmlView;}",
+  "width": 200,
+  "height": 120,
+  "fitSize": true,
+  "pixelPerfect": false,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "roundRect",
+      "background": {
+        "func": "attr@chartBackground",
+        "value": "#030C20"
+      },
+      "borderColor": "#979797",
+      "cornerRadius": 4,
+      "visible": false,
+      "rect": [
+        0,
+        0,
+        200,
+        120
+      ]
+    }
+  ]
+}

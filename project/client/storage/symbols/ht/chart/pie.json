@@ -1,0 +1,140 @@
+{
+  "modified": "Fri May 17 2019 11:07:18 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "ht.dataSource",
+      "valueType": "ObjectArray",
+      "name": "饼图数据"
+    },
+    {
+      "attr": "ht.labelLine",
+      "valueType": "Object",
+      "name": "视觉引导线"
+    },
+    {
+      "attr": "ht.label",
+      "valueType": "Object",
+      "name": "文本标签"
+    },
+    {
+      "attr": "ht.tooltip",
+      "valueType": "Object",
+      "name": "提示框组件"
+    },
+    {
+      "attr": "ht.radius",
+      "valueType": "NumberArray",
+      "name": "饼图半径"
+    },
+    {
+      "attr": "ht.center",
+      "valueType": "NumberArray",
+      "name": "饼图圆心"
+    },
+    {
+      "attr": "ht.startAngle",
+      "valueType": "PositiveNumber",
+      "name": "起始角度"
+    },
+    {
+      "attr": "ht.hoverOffset",
+      "valueType": "PositiveNumber",
+      "name": "高亮扇区偏移距离"
+    },
+    {
+      "attr": "ht.seriesName",
+      "valueType": "String",
+      "name": "饼图系列名"
+    },
+    {
+      "attr": "ht.roseType",
+      "valueType": "Boolean",
+      "name": "南丁格尔图"
+    },
+    {
+      "attr": "ht.avoidLabelOverlap",
+      "valueType": "Boolean",
+      "name": "标签防重叠"
+    }
+  ],
+  "width": 300,
+  "height": 300,
+  "fitSize": true,
+  "scrollable": true,
+  "interactive": true,
+  "pixelPerfect": false,
+  "clip": true,
+  "comps": [
+    {
+      "type": "components/ht/chart/pie.json",
+      "displayName": "pie",
+      "rect": [
+        0,
+        0,
+        300,
+        300
+      ],
+      "onUp": "__ht__function(event, data, view, point, width, height) {\nht.vector.pieInteractor.onUp.apply(this, arguments);\n}",
+      "onMove": "__ht__function(event, data, view, point, width, height) {\nht.vector.pieInteractor.onMove.apply(this, arguments);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\nht.vector.pieInteractor.onLeave.apply(this, arguments);\n}",
+      "dataSource": {
+        "func": "attr@ht.dataSource",
+        "value": [
+          {
+            "name": "pie",
+            "value": 1
+          }
+        ]
+      },
+      "labelLine": {
+        "func": "attr@ht.labelLine",
+        "value": {}
+      },
+      "label": {
+        "func": "attr@ht.label",
+        "value": {}
+      },
+      "tooltip": {
+        "func": "attr@ht.tooltip",
+        "value": {
+          "show": true,
+          "formatter": ""
+        }
+      },
+      "radius": {
+        "func": "attr@ht.radius",
+        "value": [
+          0,
+          0.25
+        ]
+      },
+      "center": {
+        "func": "attr@ht.center",
+        "value": [
+          0.5,
+          0.5
+        ]
+      },
+      "startAngle": {
+        "func": "attr@ht.startAngle",
+        "value": 0
+      },
+      "hoverOffset": {
+        "func": "attr@ht.hoverOffset",
+        "value": 4
+      },
+      "seriesName": {
+        "func": "attr@ht.seriesName",
+        "value": "饼图系列名"
+      },
+      "roseType": {
+        "func": "attr@ht.roseType",
+        "value": false
+      },
+      "avoidLabelOverlap": {
+        "func": "attr@ht.avoidLabelOverlap",
+        "value": false
+      }
+    }
+  ]
+}

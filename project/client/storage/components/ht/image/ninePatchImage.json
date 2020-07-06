@@ -1,0 +1,31 @@
+{
+  "width": 100,
+  "height": 100,
+  "snapshotURL": "",
+  "func": "__ht__function(g, rect, comp, data, view) {\nht.vector.comp.ninePatchImage.apply(this, arguments);\n}",
+  "properties": {
+    "image": {
+      "valueType": "Image"
+    },
+    "top": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 0
+    },
+    "right": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 0
+    },
+    "bottom": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 0
+    },
+    "left": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 0
+    },
+    "showGuideLine": {
+      "valueType": "Boolean",
+      "defaultValue": false
+    }
+  }
+}

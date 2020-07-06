@@ -1,0 +1,50 @@
+{
+  "modified": "Sat Jun 15 2019 11:02:06 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "dataSource",
+      "valueType": "NumberArray",
+      "name": "进度条进度"
+    },
+    {
+      "attr": "max",
+      "valueType": "Number"
+    }
+  ],
+  "width": 100,
+  "height": 100,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "components/chart/radialBarChart.json",
+      "displayName": "radialBarChart",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "progressPercentage": {
+        "func": "attr@dataSource",
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "progressColor": [
+        "#32D3EB",
+        "#60ACFC",
+        "#afdaef",
+        "rgb(135,144,204)",
+        "rgb(93,217,174)"
+      ],
+      "max": {
+        "func": "attr@max",
+        "value": 100
+      }
+    }
+  ]
+}

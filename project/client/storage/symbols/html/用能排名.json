@@ -1,0 +1,45 @@
+{
+  "modified": "Wed Aug 28 2019 14:28:34 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "barDataPlus",
+      "valueType": "ObjectArray",
+      "defaultValue": [
+        {
+          "value": 100,
+          "name": "1号楼"
+        },
+        {
+          "value": 200,
+          "name": "2号楼"
+        },
+        {
+          "value": 300,
+          "name": "3号楼"
+        }
+      ]
+    },
+    {
+      "attr": "barDataMinus",
+      "valueType": "ObjectArray",
+      "defaultValue": [
+        {
+          "value": 100,
+          "name": "1号楼"
+        },
+        {
+          "value": 200,
+          "name": "2号楼"
+        },
+        {
+          "value": 300,
+          "name": "3号楼"
+        }
+      ]
+    }
+  ],
+  "renderHTML": "__ht__function(data, gv, cache) {option = {\r\n    // color: [\"rgb(51,153,255)\",\r\n    //     \"rgb(48,242,120)\"],\r\n    tooltip: {\r\n        trigger: 'axis',\r\n        axisPointer: {            // 坐标轴指示器，坐标轴触发有效\r\n            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'\r\n        }\r\n    },\r\n\r\n    grid: {\r\n        top: '0%',\r\n        left: '10%',\r\n        right: '4%',\r\n        bottom: '20%',\r\n        containLabel: true\r\n    },\r\n    xAxis: [\r\n        {\r\n            type: 'value',\r\n            axisLine: {\r\n                show: true,\r\n                lineStyle: { color: 'rgba(66,41,255,0.80)' }\r\n            },\r\n            splitLine: { show: false },\r\n            axisLabel: {\r\n                // formatter: 'm'\r\n            }\r\n        }\r\n    ],\r\n    yAxis: [\r\n        {\r\n            type: 'category',\r\n            axisLine: {\r\n                show: false\r\n            },\r\n            axisTick: { show: false },\r\n            data: ['1号楼', '2号楼', '3号楼']\r\n        }\r\n    ],\r\n    series: [\r\n        {\r\n            name: '用电',\r\n            type: 'bar',\r\n            barCategoryGap: '80%',\r\n            // barWidth: 10.19744,\r\n            stack: '总量',\r\n            label: {\r\n                normal: {\r\n                    show: false\r\n                }\r\n            },\r\n            itemStyle: {\r\n                normal: {\r\n                    color: new echarts.graphic.LinearGradient(\r\n                        0, 0, 1, 1,\r\n                        [\r\n                            { offset: 0, color: 'rgb(25,251,255)' },\r\n                            { offset: 1, color: 'rgba(0,178,255,0.2)' }\r\n                        ]\r\n                    )\r\n                },\r\n            },\r\n        },\r\n        {\r\n            name: '用水',\r\n            type: 'bar',\r\n            stack: '总量',\r\n            label: {\r\n                normal: {\r\n                    show: false,\r\n                }\r\n            },\r\n            itemStyle: {\r\n                normal: {\r\n                    color: new echarts.graphic.LinearGradient(\r\n                        0, 0, 1, 1,\r\n                        [\r\n                            { offset: 0, color: 'rgba(30,81,199,0.2)' },\r\n                            { offset: 1, color: 'rgb(0,79,250)' }\r\n\r\n                        ]\r\n                    )\r\n                },\r\n            },\r\n        }\r\n    ]\r\n};\r\n\r\nif (!cache.htmlView) {\r\n    cache.htmlView = document.createElement('div');\r\n    cache.htmlView.style.position = 'absolute';\r\n    cache.htmlChart = echarts.init(cache.htmlView);\r\n\r\n    // layoutHTML will be called when the data needs to be drawing\r\n    cache.htmlView.layoutHTML = function () {\r\n        gv.layoutHTML(data, cache.htmlView, false);\r\n        cache.htmlChart.resize();\r\n    };\r\n}\r\n\r\n// update data\r\noption.series[0].data = data.a('barDataPlus');\r\noption.series[1].data = data.a('barDataMinus');\r\n\r\ncache.htmlChart.setOption(option);\r\n\r\n// html for showing\r\nreturn cache.htmlView;}",
+  "width": 100,
+  "height": 100,
+  "comps": []
+}

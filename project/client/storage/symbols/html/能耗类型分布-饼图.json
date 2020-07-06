@@ -1,0 +1,43 @@
+{
+  "modified": "Mon Sep 02 2019 00:37:36 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "pieData",
+      "valueType": "ObjectArray",
+      "defaultValue": [
+        {
+          "value": 100,
+          "name": "空调"
+        },
+        {
+          "value": 200,
+          "name": "饮用水"
+        },
+        {
+          "value": 300,
+          "name": "动力"
+        },
+        {
+          "value": 400,
+          "name": "特殊用电"
+        },
+        {
+          "value": 200,
+          "name": "污水"
+        },
+        {
+          "value": 300,
+          "name": "照明插座"
+        },
+        {
+          "value": 400,
+          "name": "其他"
+        }
+      ]
+    }
+  ],
+  "renderHTML": "__ht__function(data, gv, cache) {//         // \"rgb(255,97,142)\", // 空调\r\n//         // \"rgb(255,175,125)\", // 饮用水\r\n//         // \"rgb(226,250,87)\", // 动力\r\n//         // \"rgb(48,242,120)\", // 特殊用电\r\n//         // \"rgb(51,232,169)\", // 污水\r\n//         // \"rgb(61,155,255)\", // 照明插座\r\n//         // \"rgb(0,111,222)\", // 其他\r\n//         \"#32D3EB\",\r\n//         \"rgb(241,125,164)\",\r\n//         \"rgb(93,217,174)\",\r\n//         \"#FEB64D\",\r\n//         \"rgb(145,115,205)\",\r\n//         \"rgb(51,153,255)\",\r\n//         \"rgb(48,242,120)\"\r\n\r\noption = {\r\n    color: [\r\n        \"rgb(49,210,235)\",\r\n\r\n        \"rgb(241,125,164)\", // 饮用水\r\n\r\n        \"rgb(93,217,174)\",\r\n\r\n        \"#FEB64D\", // 特殊用电\r\n\r\n        \"rgb(145,115,205)\",\r\n        \"rgb(51,153,255)\",\r\n        \"rgb(48,242,120)\"\r\n    ],\r\n    tooltip: {\r\n        trigger: 'item',\r\n        formatter: \"{b}: ({d}%)\",\r\n    },\r\n    series: [\r\n        {\r\n            name: '能耗类型',\r\n            type: 'pie',\r\n            radius: '70%',\r\n            center: ['50%', '50%'],\r\n            avoidLabelOverlap: false,\r\n            hoverOffset: 4, // 鼠标放在上面时的图块偏移大小\r\n            label: {\r\n                show: false\r\n                // fontSize: 10\r\n            },\r\n        }\r\n    ]\r\n};\r\n\r\nif (!cache.htmlView) {\r\n    cache.htmlView = document.createElement('div');\r\n    cache.htmlView.style.position = 'absolute';\r\n    cache.htmlChart = echarts.init(cache.htmlView);\r\n\r\n    // // 给饼图添加 mouseover 事件\r\n    // cache.htmlChart.on('mouseover', function (params) {\r\n    //     let percent = gv.dm().getDataByTag('percent');\r\n    //     percent.text = params.data.value;\r\n    //     console.log(percent.text);\r\n    // });\r\n\r\n    // layoutHTML will be called when the data needs to be drawing\r\n    cache.htmlView.layoutHTML = function () {\r\n        gv.layoutHTML(data, cache.htmlView, true);\r\n        cache.htmlChart.resize();\r\n    };\r\n}\r\n\r\n// update data\r\noption.series[0].data = data.a('pieData');\r\n\r\ncache.htmlChart.setOption(option);\r\n\r\n// html for showing\r\nreturn cache.htmlView;}",
+  "width": 100,
+  "height": 100,
+  "comps": []
+}

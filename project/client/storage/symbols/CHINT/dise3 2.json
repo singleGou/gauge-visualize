@@ -1,0 +1,529 @@
+{
+  "modified": "Sun Sep 01 2019 16:46:42 GMT+0800 (中国标准时间)",
+  "dataBindings": [],
+  "width": 651,
+  "height": 271,
+  "comps": [
+    {
+      "type": "shape",
+      "background": "rgba(0,20,74,0.80)",
+      "borderColor": "#979797",
+      "gradientColor": "rgba(0,0,0,0.00)",
+      "points": [
+        35.20947,
+        13.07525,
+        20.4215,
+        25.75064,
+        20.4215,
+        239.3374,
+        34.50528,
+        254.82388,
+        612.64513,
+        254.82388,
+        627.43268,
+        241.44428,
+        627.43268,
+        26.44921,
+        612.64513,
+        13.07525
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        42.18873,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        78.40463,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        115.97305,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        153.5415,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        191.10992,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        228.67836,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        266.24678,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        303.8152,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        341.38365,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        378.95206,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        416.52051,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        454.08893,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        491.65735,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        529.22579,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        566.79421,
+        10.2166,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rect": [
+        603.12786,
+        9.56287,
+        0.51977,
+        244.91163
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -100.27717,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -136.41728,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -172.55742,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -208.69757,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -244.83771,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -280.97783,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 10,
+      "borderColor": "rgb(54,117,255)",
+      "pixelPerfect": true,
+      "layoutH": "left",
+      "displayName": "左",
+      "points": [
+        36.53733,
+        9.09094,
+        20.4215,
+        23.27706,
+        20.4215,
+        242.73664,
+        36.53733,
+        258.80819
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 4,
+      "borderColor": "rgba(50,104,219,0.7)",
+      "pixelPerfect": true,
+      "layoutH": "left",
+      "displayName": "左",
+      "points": [
+        16.11586,
+        0,
+        0,
+        14.18612,
+        0,
+        251.8276,
+        16.11586,
+        267.89913
+      ]
+    },
+    {
+      "type": "text",
+      "text": "2号楼",
+      "align": "center",
+      "color": "rgb(255,255,255)",
+      "font": "40px sans-serif, Arial",
+      "pixelPerfect": true,
+      "rect": [
+        271.49306,
+        50.10413,
+        104.86807,
+        12.29439
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,49,71,0.10)",
+      "borderWidth": 0.05,
+      "borderColor": "rgba(255,255,255,0.8)",
+      "pixelPerfect": true,
+      "displayName": "背景网格",
+      "rotation": 1.5708,
+      "rect": [
+        323.35323,
+        -70.82273,
+        0.51977,
+        614.99448
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 10,
+      "borderColor": "rgb(54,117,255)",
+      "pixelPerfect": true,
+      "layoutH": "left",
+      "displayName": "左",
+      "rotation": 3.14159,
+      "points": [
+        628.95752,
+        9.09094,
+        612.84169,
+        23.27706,
+        612.84169,
+        242.73664,
+        628.95752,
+        258.80819
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 4,
+      "borderColor": "rgba(50,104,219,0.7)",
+      "pixelPerfect": true,
+      "layoutH": "left",
+      "displayName": "左",
+      "rotation": 3.14159,
+      "points": [
+        649.37902,
+        0,
+        633.26316,
+        14.18612,
+        633.26316,
+        251.8276,
+        649.37902,
+        267.89913
+      ]
+    },
+    {
+      "type": "text",
+      "text": "今日用电：",
+      "color": "#32D3EB",
+      "font": "26px sans-serif, Arial",
+      "pixelPerfect": true,
+      "rect": [
+        96.75654,
+        132.39979,
+        131.31808,
+        15.3953
+      ]
+    },
+    {
+      "type": "text",
+      "text": "kWh",
+      "align": "center",
+      "color": "rgb(255,255,255)",
+      "font": "26px sans-serif, Arial",
+      "pixelPerfect": true,
+      "rect": [
+        440.55162,
+        132.39979,
+        109.91807,
+        15.3953
+      ]
+    },
+    {
+      "type": "text",
+      "text": "今日用水：",
+      "color": "#32D3EB",
+      "font": "26px sans-serif, Arial",
+      "pixelPerfect": true,
+      "rect": [
+        96.75654,
+        204.45666,
+        131.31808,
+        15.3953
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/CHINT/number-pane.json",
+      "visible": false,
+      "pixelPerfect": true,
+      "displayName": "number-pane",
+      "rect": [
+        266.13434,
+        114.62419,
+        174.41729,
+        37.11305
+      ]
+    },
+    {
+      "type": "text",
+      "text": "m³",
+      "align": "center",
+      "color": "rgb(255,255,255)",
+      "font": "26px sans-serif, Arial",
+      "pixelPerfect": true,
+      "rect": [
+        440.55162,
+        203.03062,
+        109.91807,
+        15.3953
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/CHINT/number-pane.json",
+      "visible": false,
+      "pixelPerfect": true,
+      "displayName": "number-pane1",
+      "rect": [
+        266.13434,
+        189.90066,
+        174.41729,
+        37.11305
+      ]
+    }
+  ]
+}

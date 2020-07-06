@@ -1,0 +1,93 @@
+{
+  "modified": "Sat Aug 17 2019 13:20:01 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "xAxis",
+      "valueType": "StringArray",
+      "defaultValue": [
+        "2019-07-01",
+        "2019-07-10",
+        "三月",
+        "四月",
+        "五月",
+        "六月",
+        "七月"
+      ]
+    },
+    {
+      "attr": "legendData",
+      "valueType": "StringArray",
+      "defaultValue": [
+        "上月用电",
+        "本月用电",
+        "上月用水",
+        "本月用水"
+      ]
+    },
+    {
+      "attr": "series",
+      "valueType": "ObjectArray",
+      "defaultValue": [
+        {
+          "name": "上月用电",
+          "type": "line",
+          "data": [
+            120,
+            132,
+            101,
+            134,
+            90,
+            230,
+            210
+          ]
+        },
+        {
+          "name": "本月用电",
+          "type": "line",
+          "data": [
+            220,
+            182,
+            191,
+            234,
+            290,
+            330,
+            310
+          ]
+        },
+        {
+          "name": "上月用水",
+          "type": "line",
+          "data": [
+            12,
+            132,
+            101,
+            14,
+            90,
+            230,
+            210
+          ]
+        },
+        {
+          "name": "上月用电",
+          "type": "line",
+          "data": [
+            220,
+            82,
+            191,
+            234,
+            20,
+            330,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_chart.json",
+  "renderHTML": "__ht__function(data, gv, cache) {var option = {\n    color: ['rgb(51,153,255)', '#FEB64D', 'rgb(93,217,174)', 'rgb(204,104,166)'],\n    tooltip: {\n        trigger: 'axis',\n        axisPointer: {\n            type: 'cross',\n            label: {\n                backgroundColor: '#6a7985'\n            }\n        }\n    },\n    legend: {\n        textStyle: {\n            color: 'rgb(153, 153, 153)'\n        },\n        bottom: '2%'\n    },\n    grid: {\n        top: '3%',\n        left: '3%',\n        right: '10%',\n        bottom: '15%',\n        containLabel: true\n    },\n    xAxis: {\n        type: 'category',\n        boundaryGap: false,\n        axisLine: {\n            show: false\n        },\n        axisLabel: {\n            color: 'rgb(153, 153, 153)'\n        },\n        axisTick: {\n            show: false\n        },\n        splitLine: {\n            show: false,\n            lineStyle: {\n                color: 'rgb(153, 153, 153)'\n            }\n        }\n    },\n    yAxis: {\n        type: 'value',\n         axisLine: {\n            show: false\n        },\n        axisLabel: {\n            color: 'rgb(153, 153, 153)'\n        },\n        axisTick: {\n            show: false\n        },\n        splitLine: {\n            show: false,\n            lineStyle: {\n                color: 'rgb(153, 153, 153)'\n            }\n        }\n    }\n};\n\nif (!cache.htmlView) {\n    cache.htmlView = document.createElement('div');\n    cache.htmlView.style.position = 'absolute';\n    cache.htmlChart = echarts.init(cache.htmlView);\n\n    // layoutHTML will be called when the data needs to be drawing\n    cache.htmlView.layoutHTML = function() {\n        gv.layoutHTML(data, cache.htmlView, true);\n        cache.htmlChart.resize();\n    };\n}\n\n// update data\noption.xAxis.data = data.a('xAxis');\noption.legend.data = data.a('legendData');\noption.series = data.a('series');\n\ncache.htmlChart.setOption(option);\n\n// html for showing\nreturn cache.htmlView;}",
+  "width": 200,
+  "height": 120,
+  "fitSize": true,
+  "pixelPerfect": false,
+  "comps": []
+}

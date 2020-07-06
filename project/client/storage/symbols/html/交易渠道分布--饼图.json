@@ -1,0 +1,13 @@
+{
+  "modified": "Tue Aug 20 2019 10:21:31 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "pieData",
+      "valueType": "ObjectArray"
+    }
+  ],
+  "renderHTML": "__ht__function(data, gv, cache) {var option = {\r\n    color: ['rgb(0,111,222)', 'rgb(48,242,120)', '#32D3EB'],\r\n    tooltip: {\r\n        trigger: 'item',\r\n        formatter: \"{a}: <br/>{b}({d}%)\"\r\n    },\r\n    // grid: {\r\n    //     top: '20%',\r\n    //     left: 0,\r\n    //     right: 0,\r\n    //     bottom: '5%',\r\n    //     containLabel: true\r\n    // },\r\n    series: [\r\n        {\r\n            name: '支付方式',\r\n            type: 'pie',\r\n            radius: ['50%', '90%'],\r\n            avoidLabelOverlap: true,\r\n            hoverOffset: 4,\r\n            labelLine: {\r\n                show: false\r\n            },\r\n            label: {\r\n                show: false,\r\n                // formatter: '{d}%\\n{b} {c}',\r\n                // fontSize: 12\r\n            }\r\n        }\r\n    ]\r\n};\r\n\r\nif (!cache.htmlView) {\r\n    cache.htmlView = document.createElement('div');\r\n    cache.htmlView.style.position = 'absolute';\r\n    cache.htmlChart = echarts.init(cache.htmlView);\r\n\r\n    // layoutHTML will be called when the data needs to be drawing\r\n    cache.htmlView.layoutHTML = function () {\r\n        gv.layoutHTML(data, cache.htmlView, true);\r\n        cache.htmlChart.resize();\r\n    };\r\n}\r\n\r\n// update data\r\noption.series[0].data = data.a('pieData');\r\n\r\ncache.htmlChart.setOption(option);\r\n\r\n// html for showing\r\nreturn cache.htmlView;}",
+  "width": 100,
+  "height": 100,
+  "comps": []
+}

@@ -1,0 +1,104 @@
+{
+  "modified": "Sat Jun 15 2019 16:17:31 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "dataIndicator",
+      "valueType": "Object",
+      "name": "指标"
+    },
+    {
+      "attr": "dataSource",
+      "valueType": "NumberArray",
+      "defaultValue": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ]
+    },
+    {
+      "attr": "labelColor",
+      "valueType": "Color"
+    }
+  ],
+  "width": 300,
+  "height": 300,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "components/ht/chart/charts-radar.json",
+      "displayName": "charts-radar",
+      "rect": [
+        0,
+        0,
+        300,
+        300
+      ],
+      "dataIndicator": {
+        "func": "attr@dataIndicator",
+        "value": [
+          {
+            "name": "AQI",
+            "max": 300
+          },
+          {
+            "name": "PM2.5",
+            "max": 250
+          },
+          {
+            "name": "PM10",
+            "max": 300
+          },
+          {
+            "name": "CO",
+            "max": 50
+          },
+          {
+            "name": "NO2",
+            "max": 200
+          },
+          {
+            "name": "SO2",
+            "max": 100
+          }
+        ]
+      },
+      "dataset": {
+        "func": "__ht__function(data, view) {\nreturn [\n    {\n        \"name\": \"北京\",\n        \"color\": \"#B63346\",\n        \"value\": data.a('dataSource')\n    }\n]\n}",
+        "value": [
+          {
+            "name": "北京",
+            "color": "#B63346",
+            "value": [
+              180,
+              160,
+              190,
+              40,
+              140,
+              80
+            ]
+          }
+        ]
+      },
+      "isShowPoint": true,
+      "gapColors": [
+        "rgba(255,255,255,0.1)",
+        "rgba(255,255,255,0.1)"
+      ],
+      "labelColor": {
+        "func": "attr@labelColor",
+        "value": "rgb(79,188,227)"
+      },
+      "colorList": [
+        "rgba(51,156,255,0.4)",
+        "rgb(241,125,164)",
+        "rgb(93,217,174)",
+        "#FEB64D",
+        "rgb(145,115,205)",
+        "rgb(51,153,255)"
+      ]
+    }
+  ]
+}
